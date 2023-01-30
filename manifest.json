@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts Blocker",
+  "description": "Google Chrome Extension to remove youtube shorts from youtube homepage.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "video-blocker.png"
+  },
+   "content_scripts": [
+   {
+     "matches": ["*://*.youtube.com/*"],
+     "js": ["content-script.js"]
+   }
+ ]
+}
